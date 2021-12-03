@@ -1,0 +1,37 @@
+@media (max-width: 31.25em) {
+    .hide-on-mobile {
+        display: none;
+    }
+    .search-bar {
+        padding: 4px 12px;
+    }
+    .search-bar__input {
+        margin: 0 10px;
+    }
+    .search-option__btn {
+        padding: 0 10px;
+    }
+    .navbar__menu-wrap {
+        right: -122px;
+    }
+}
+
+@media (max-width: 47em) {
+    .search-bar__img-wrap {
+        display: none;
+    }
+    .adv-search {
+        margin: 34px 20px 0;
+    }
+    .adv-search__desc {
+        display: none;
+        flex-basis: 0;
+    }
+    .adv-search__label {
+        flex-basis: 30%;
+        line-height: 1.4rem;
+    }
+    .adv-search__data {
+        flex-basis: 65%;
+    }
+}

@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" type="image/png" href="./static/search/img/google-header-logo.png"/>
+        <link rel="stylesheet" href="./static/search/fonts/themify-icons/themify-icons.css">
+        <link rel="stylesheet" href="./static/search/css/base.css">
+        <link rel="stylesheet" href="./static/search/css/main.css">
+        <link rel="stylesheet" href="./static/search/css/responsive.css">
+        <link rel="stylesheet" href="./static/search/css/img-search.css">
+        <title>Google Images CS50</title>
+    </head>
+    <body>
+        <div class="app">
+            <header class="header">
+                <nav class="navbar">
+                    <ul class="navbar__list navbar__list-sub">  
+                        <li class="navbar__item">
+                            <a href="./index.html" class="navbar__link">Google Search</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar__list navbar__list-main">
+                        <li class="navbar__item navbar__menu">
+                            <input type="checkbox" id="menu-toggle" class="navbar__menu-checkbox" hidden>
+                            <label for="menu-toggle" class="navbar__link navbar__menu-label">
+                                <i class="ti-layout-grid3-alt"></i>
+                            </label>
+                            <div class="navbar__menu-desc">
+                                Google apps
+                            </div>
+                            <div class="navbar__menu-wrap">
+                                <ul class="navbar__menu-list">
+                                    <li class="navbar__menu-item">
+                                        <a href="#" class="navbar__menu-link">
+                                            <img src="./static/search/img/account_icon.png" alt="" class="navbar__menu-img">
+                                            <p class="navbar__menu-name">Account</p> 
+                                        </a>
+                                    </li>
+                                    <li class="navbar__menu-item">
+                                        <a href="#" class="navbar__menu-link">
+                                            <img src="./static/search/img/google_icon.png" alt="" class="navbar__menu-img">
+                                            <p class="navbar__menu-name">Search</p> 
+                                        </a>
+                                    </li>
+                                    <li class="navbar__menu-item">
+                                        <a href="#" class="navbar__menu-link">
+                                            <img src="./static/search/img/youtube_icon.png" alt="" class="navbar__menu-img">
+                                            <p class="navbar__menu-name">Youtube</p> 
+                                        </a>
+                                    </li>
+                                    <li class="navbar__menu-item">
+                                        <a href="#" class="navbar__menu-link">
+                                            <img src="./static/search/img/play_icon.png" alt="" class="navbar__menu-img">
+                                            <p class="navbar__menu-name">Play</p> 
+                                        </a>
+                                    </li>
+                                    <li class="navbar__menu-item">
+                                        <a href="#" class="navbar__menu-link">
+                                            <img src="./static/search/img/news.png" alt="" class="navbar__menu-img">
+                                            <p class="navbar__menu-name">News</p> 
+                                        </a>
+                                    </li>
+                                    <li class="navbar__menu-item">
+                                        <a href="#" class="navbar__menu-link">
+                                            <img src="./static/search/img/gmail_icon.png" alt="" class="navbar__menu-img">
+                                            <p class="navbar__menu-name">Gmail</p> 
+                                        </a>
+                                    </li>
+                                    <li class="navbar__menu-item">
+                                        <a href="#" class="navbar__menu-link">
+                                            <img src="./static/search/img/meet_icon.png" alt="" class="navbar__menu-img">
+                                            <p class="navbar__menu-name">Meet</p> 
+                                        </a>
+                                    </li>
+                                    <li class="navbar__menu-item">
+                                        <a href="#" class="navbar__menu-link">
+                                            <img src="./static/search/img/chat_icon.png" alt="" class="navbar__menu-img">
+                                            <p class="navbar__menu-name">Chat</p> 
+                                        </a>
+                                    </li>
+                                    <li class="navbar__menu-item">
+                                        <a href="#" class="navbar__menu-link">
+                                            <img src="./static/search/img/contacts_icon.png" alt="" class="navbar__menu-img">
+                                            <p class="navbar__menu-name">Contacts</p> 
+                                        </a>
+                                    </li>
+                                    <li class="navbar__menu-item">
+                                        <a href="#" class="navbar__menu-link">
+                                            <img src="./static/search/img/drive_icon.png" alt="" class="navbar__menu-img">
+                                            <p class="navbar__menu-name">Drive</p> 
+                                        </a>
+                                    </li>
+                                    <li class="navbar__menu-item">
+                                        <a href="#" class="navbar__menu-link">
+                                            <img src="./static/search/img/calendar_icon.png" alt="" class="navbar__menu-img">
+                                            <p class="navbar__menu-name">Calendar</p> 
+                                        </a>
+                                    </li>
+                                    <li class="navbar__menu-item">
+                                        <a href="#" class="navbar__menu-link">
+                                            <img src="./static/search/img/translate_icon.png" alt="" class="navbar__menu-img">
+                                            <p class="navbar__menu-name">Translate</p> 
+                                        </a>
+                                    </li>
+                                    <li class="navbar__menu-item">
+                                        <a href="#" class="navbar__menu-link">
+                                            <img src="./static/search/img/photos_icon.png" alt="" class="navbar__menu-img">
+                                            <p class="navbar__menu-name">Photos</p> 
+                                        </a>
+                                    </li>
+                                    <li class="navbar__menu-item">
+                                        <a href="#" class="navbar__menu-link">
+                                            <img src="./static/search/img/duo_icon.png" alt="" class="navbar__menu-img">
+                                            <p class="navbar__menu-name">Duo</p> 
+                                        </a>
+                                    </li>
+                                </ul>
+                                <ul class="navbar__menu-list">
+                                    <li class="navbar__menu-item">
+                                        <a href="#" class="navbar__menu-link">
+                                            <img src="./static/search/img/finance_icon.png" alt="" class="navbar__menu-img">
+                                            <p class="navbar__menu-name">Finance</p> 
+                                        </a>
+                                    </li>
+                                    <li class="navbar__menu-item">
+                                        <a href="#" class="navbar__menu-link">
+                                            <img src="./static/search/img/docs_icon.png" alt="" class="navbar__menu-img">
+                                            <p class="navbar__menu-name">Docs</p> 
+                                        </a>
+                                    </li>
+                                    <li class="navbar__menu-item">
+                                        <a href="#" class="navbar__menu-link">
+                                            <img src="./static/search/img/sheets_icon.png" alt="" class="navbar__menu-img">
+                                            <p class="navbar__menu-name">Sheets</p> 
+                                        </a>
+                                    </li>
+                                    <li class="navbar__menu-item">
+                                        <a href="#" class="navbar__menu-link">
+                                            <img src="./static/search/img/slides_icon.png" alt="" class="navbar__menu-img">
+                                            <p class="navbar__menu-name">Slides</p> 
+                                        </a>
+                                    </li>
+                                    <li class="navbar__menu-item">
+                                        <a href="#" class="navbar__menu-link">
+                                            <img src="./static/search/img/books_icon.png" alt="" class="navbar__menu-img">
+                                            <p class="navbar__menu-name">Books</p> 
+                                        </a>
+                                    </li>
+                                    <li class="navbar__menu-item">
+                                        <a href="#" class="navbar__menu-link">
+                                            <img src="./static/search/img/hangouts_icon.png" alt="" class="navbar__menu-img">
+                                            <p class="navbar__menu-name">Hangouts</p> 
+                                        </a>
+                                    </li>
+                                    <li class="navbar__menu-item">
+                                        <a href="#" class="navbar__menu-link">
+                                            <img src="./static/search/img/keeps_icon.png" alt="" class="navbar__menu-img">
+                                            <p class="navbar__menu-name">Keep</p> 
+                                        </a>
+                                    </li>
+                                    <li class="navbar__menu-item">
+                                        <a href="#" class="navbar__menu-link">
+                                            <img src="./static/search/img/jamboard_icon.png" alt="" class="navbar__menu-img">
+                                            <p class="navbar__menu-name">Jamboard</p> 
+                                        </a>
+                                    </li>
+                                    <li class="navbar__menu-item">
+                                        <a href="#" class="navbar__menu-link">
+                                            <img src="./static/search/img/classroom_icon.png" alt="" class="navbar__menu-img">
+                                            <p class="navbar__menu-name">Classroom</p> 
+                                        </a>
+                                    </li>
+                                    <li class="navbar__menu-item">
+                                        <a href="#" class="navbar__menu-link">
+                                            <img src="./static/search/img/earth_icon.png" alt="" class="navbar__menu-img">
+                                            <p class="navbar__menu-name">Earth</p> 
+                                        </a>
+                                    </li>
+                                    <li class="navbar__menu-item">
+                                        <a href="#" class="navbar__menu-link">
+                                            <img src="./static/search/img/collections_icon.png" alt="" class="navbar__menu-img">
+                                            <p class="navbar__menu-name">Collections</p> 
+                                        </a>
+                                    </li>
+                                    <li class="navbar__menu-item">
+                                        <a href="#" class="navbar__menu-link">
+                                            <img src="./static/search/img/arts_and_culture_icon.png" alt="" class="navbar__menu-img">
+                                            <p class="navbar__menu-name">Arts and Culture</p> 
+                                        </a>
+                                    </li>
+                                    <li class="navbar__menu-item">
+                                        <a href="#" class="navbar__menu-link">
+                                            <img src="./static/search/img/ads_icon.png" alt="" class="navbar__menu-img">
+                                            <p class="navbar__menu-name">Google Ads</p>  
+                                        </a>
+                                    </li>
+                                    <li class="navbar__menu-item">
+                                        <a href="#" class="navbar__menu-link">
+                                            <img src="./static/search/img/podcast_icon.png" alt="" class="navbar__menu-img">
+                                            <p class="navbar__menu-name">Podcasts</p> 
+                                        </a>
+                                    </li>
+                                    <li class="navbar__menu-item">
+                                        <a href="#" class="navbar__menu-link">
+                                            <img src="./static/search/img/one_icon.png" alt="" class="navbar__menu-img">
+                                            <p class="navbar__menu-name">Google One</p>  
+                                        </a>
+                                    </li>
+                                    <li class="navbar__menu-item">
+                                        <a href="#" class="navbar__menu-link">
+                                            <img src="./static/search/img/travel_icon.png" alt="" class="navbar__menu-img">
+                                            <p class="navbar__menu-name">Travel</p> 
+                                        </a>
+                                    </li>
+                                    <li class="navbar__menu-item">
+                                        <a href="#" class="navbar__menu-link">
+                                            <img src="./static/search/img/forms.png" alt="" class="navbar__menu-img">
+                                            <p class="navbar__menu-name">Forms</p> 
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="navbar__menu-more">
+                                    <p>More from Google</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="navbar__item">
+                            <a href="#" class="navbar__link navbar__sign-in-btn">Sign in</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+            <section class="brand">
+                <div class="brand__img-wrap">
+                    <img src="./static/search/img/google_logo.png" alt="Google" class="brand__img">
+                    <p class="brand__name">images</p>
+                </div>
+            </section>
+            <section class="search">
+                <div class="search-wrap">
+                    <form action="https://google.com/search" class="search-form">
+                        <input type="checkbox" id="toggle-img-adv" hidden>
+                        <article class="search-bar">
+                            <div class="search-bar__item">
+                                <i class="ti-search search-bar__icon"></i>
+                            </div>
+                            <div class="search-bar__item search-bar__input-wrap">
+                                <input type="hidden" name="tbm" value="isch">
+                                <input type="text" name="q" class="search-bar__input" autofocus>
+                            </div> 
+                            <label for="toggle-img-adv" class="search-bar__item search-bar__img-wrap">
+                                    <img src="./static/search/img/img_search_icon.png" alt="" class="search-bar__item search-bar__img">
+                                    <div class="search-bar__desc search-bar__img-desc">
+                                        Search by image
+                                    </div>
+                            </label>
+                            <div class="search-bar__item search-bar__voice-wrap">
+                                <svg focusable="false" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="search-bar__voice-icon">
+                                    <path fill="#4285f4" d="m12 15c1.66 0 3-1.31 3-2.97v-7.02c0-1.66-1.34-3.01-3-3.01s-3 1.34-3 3.01v7.02c0 1.66 1.34 2.97 3 2.97z"></path><path fill="#34a853" d="m11 18.08h2v3.92h-2z"></path><path fill="#fbbc05" d="m7.05 16.87c-1.27-1.33-2.05-2.83-2.05-4.87h2c0 1.45 0.56 2.42 1.47 3.38v0.32l-1.15 1.18z"></path><path fill="#ea4335" d="m12 16.93a4.97 5.25 0 0 1 -3.54 -1.55l-1.41 1.49c1.26 1.34 3.02 2.13 4.95 2.13 3.87 0 6.99-2.92 6.99-7h-1.99c0 2.92-2.24 4.93-5 4.93z"></path>
+                                </svg>
+                                <div class="search-bar__desc search-bar__voice-desc">
+                                    Search by voice
+                                </div>
+                            </div>
+                            <div class="search-bar__item">
+                                <button type="submit" class="search-bar__search-btn">
+                                    <i class="ti-search search-bar__icon search-bar__search-btn-icon"></i>
+                                </button>
+                            </div>
+                        </article>
+                    </form>
+                </div>
+                <article class="img-adv">
+                    <div class="img-adv__container">
+                        <div class="img-adv__head">
+                            <div class="img-adv__head-bar">
+                                <h3 class="img-adv__head-title">Search by image</h3>
+                                <label for="toggle-img-adv" class="img-adv__close-btn">
+                                    <i class="ti-close img-adv__close-icon"></i>
+                                </label>
+                            </div>
+                            <p class="img-adv__head-note">
+                                Search Google with an image instead of text. Try dragging an image here.
+                            </p>
+                        </div>
+                        <input type="radio" id="toggle-url" name="img-adv-toggle" class="img-adv__radio" checked hidden>
+                        <input type="radio" id="toggle-img" name="img-adv-toggle" class="img-adv__radio" hidden> 
+                        <div class="img-adv__toggle">
+                            <div class="img-adv__toggle-btn-wrap img-adv__toggle-url">
+                                <label for="toggle-url" class="img-adv__toggle-btn">
+                                    Paste image URL
+                                </label>
+                                <div class="img-adv__help img-adv__help-url">
+                                    <i class="ti-help img-adv__help-icon"></i>
+                                    <div class="img-adv__help-info">
+                                        <div class="img-adv__help-info-wrap">
+                                            <p class="img-adv__help-info-item">
+                                                How to get an image URL
+                                            </p>
+                                            <ol class="img-adv__help-info-item img-adv__help-info-list">
+                                                <li class="img-adv__help-info-li">
+                                                    Right click an image on the web and copy the image's URL.
+                                                </li>
+                                                <li class="img-adv__help-info-li">
+                                                    Return to the search box and paste on the URL (Ctrl+V or Command+V).
+                                                </li>
+                                            </ol>
+                                            <p class="img-adv__help-info-item">
+                                                <b>Tip:</b> Try dragging an image into the search box from your computer or the web
+                                            </p>
+                                            <a href="#" class="img-adv__help-info-item img-adv__help-info-a">
+                                                Learn about search by image
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="img-adv__toggle-btn-wrap img-adv__toggle-img">
+                                <label for="toggle-img" class="img-adv__toggle-btn">
+                                    Upload an image
+                                </label>
+                                <div class="img-adv__help img-adv__help-img">
+                                    <i class="ti-help img-adv__help-icon"></i>
+                                    <div class="img-adv__help-info">
+                                        <div class="img-adv__help-info-wrap">
+                                            <p class="img-adv__help-info-item">
+                                                How to upload an image
+                                            </p>
+                                            <ul class="img-adv__help-info-item img-adv__help-info-list">
+                                                <li class="img-adv__help-info-li">
+                                                    Use the button below to open an image that’s on your computer.
+                                                </li>
+                                            </ul>
+                                            <p class="img-adv__help-info-item">
+                                                Google will automatically upload and search using the image.
+                                            </p>
+                                            <p class="img-adv__help-info-item">
+                                                Please do not upload images with sensitive or identifying information.
+                                            </p>
+                                            <p class="img-adv__help-info-item">
+                                                <b>Tip:</b> Try dragging an image into the search box from your computer or the web
+                                            </p>
+                                            <a href="#" class="img-adv__help-info-item img-adv__help-info-a">
+                                                Learn about search by image
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="img-adv__search">
+                            <div class="img-adv__search-url">
+                                <form action="http://images.google.com/searchbyimage" class="img-adv__search-url-form">
+                                    <div class="img-adv__search-url-wrap">
+                                        <input type="text" name="image_url" class="img-adv__search-url-input">
+                                        <button type="submit" class="img-adv__search-url-btn">Search by image</button>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="img-adv__search-img">
+                                <div class="img-adv__search-img-field">
+                                    <input type="file" name="img-file" id="img-file">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </section>
+            <section class="language">  
+            </section>
+            <footer class="footer">
+                <section class="footer-bar">
+                    <div class="footer-bar__location">
+                        Location
+                    </div>
+                </section>
+                <section class="footer-bar">
+                    <nav class="footer-bar__option">
+                        <ul class="footer-bar__option-list">
+                            <li class="footer-bar__option-item">
+                                <a href="#" class="footer-bar__option-link">About</a>
+                            </li>
+                            <li class="footer-bar__option-item">
+                                <a href="#" class="footer-bar__option-link">Advertising</a>
+                            </li>
+                            <li class="footer-bar__option-item">
+                                <a href="#" class="footer-bar__option-link">Business</a>
+                            </li>
+                            <li class="footer-bar__option-item hide-on-mobile">
+                                <a href="#" class="footer-bar__option-link">How Search works</a>
+                            </li>
+                        </ul>
+                        <ul class="footer-bar__option-list">
+                            <li class="footer-bar__option-item">
+                                <a href="#" class="footer-bar__option-link">Privacy</a>
+                            </li>
+                            <li class="footer-bar__option-item">
+                                <a href="#" class="footer-bar__option-link">Terms</a>
+                            </li>
+                            <li class="footer-bar__option-item footer-bar__setting">
+                                <label for="setting-check" class="footer-bar__option-link footer-bar__setting-label">Settings</label>
+                                <input type="checkbox" id="setting-check" class="footer-bar__setting-checkbox" hidden>
+                                <div class="footer-bar__setting-wrap">
+                                    <ul class="footer-bar__setting-list">
+                                        <li class="footer-bar__setting-item">
+                                            <a href="#" class="footer-bar__setting-link">Search settings</a>
+                                        </li>
+                                        <li class="footer-bar__setting-item">
+                                            <a href="#" class="footer-bar__setting-link">Advanced search</a>
+                                        </li>
+                                        <li class="footer-bar__setting-item">
+                                            <a href="#" class="footer-bar__setting-link">Search history</a>
+                                        </li>
+                                        <li class="footer-bar__setting-item">
+                                            <a href="#" class="footer-bar__setting-link">Search help</a>
+                                        </li>
+                                        <li class="footer-bar__setting-item">
+                                            <a href="#" class="footer-bar__setting-link">Send feedback</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+                </section>
+            </footer>
+        </div>
+    </body>
+</html>

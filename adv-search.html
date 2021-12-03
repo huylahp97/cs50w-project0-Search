@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" type="image/png" href="./static/search/img/google-header-logo.png"/>
+        <link rel="stylesheet" href="./static/search/fonts/themify-icons/themify-icons.css">
+        <link rel="stylesheet" href="./static/search/css/base.css">
+        <link rel="stylesheet" href="./static/search/css/adv-search.css">
+        <link rel="stylesheet" href="./static/search/css/responsive.css">
+        
+        <title>Google CS50</title>
+    </head>
+    <body>
+        <div class="app">
+            <header class="header">
+                <nav class="navbar">
+                    <ul class="navbar__list navbar__list-sub">
+                        <li class="navbar__item">
+                            <a href="./index.html" class="navbar__link navbar__home-link">
+                                <img src="./static/search/img/google_logo.png" alt="" class="navbar__home-img">
+                            </a>
+                        </li>                    
+                    </ul>
+                    <ul class="navbar__list navbar__list-main">
+                        <li class="navbar__item">
+                            <a href="./index.html" class="navbar__link navbar__link--underline">Google Search</a>
+                        </li>
+                        <li class="navbar__item navbar__menu">
+                            <input type="checkbox" id="menu-toggle" class="navbar__menu-checkbox" hidden>
+                            <label for="menu-toggle" class="navbar__link navbar__menu-label">
+                                <i class="ti-layout-grid3-alt"></i>
+                            </label>
+                            <div class="navbar__menu-desc">
+                                Google apps
+                            </div>
+                            <div class="navbar__menu-wrap">
+                                <ul class="navbar__menu-list">
+                                    <li class="navbar__menu-item">
+                                        <a href="#" class="navbar__menu-link">
+                                            <img src="./static/search/img/account_icon.png" alt="" class="navbar__menu-img">
+                                            <p class="navbar__menu-name">Account</p> 
+                                        </a>
+                                    </li>
+                                    <li class="navbar__menu-item">
+                                        <a href="#" class="navbar__menu-link">
+                                            <img src="./static/search/img/google_icon.png" alt="" class="navbar__menu-img">
+                                            <p class="navbar__menu-name">Search</p> 
+                                        </a>
+                                    </li>
+                                    <li class="navbar__menu-item">
+                                        <a href="#" class="navbar__menu-link">
+                                            <img src="./static/search/img/youtube_icon.png" alt="" class="navbar__menu-img">
+                                            <p class="navbar__menu-name">Youtube</p> 
+                                        </a>
+                                    </li>
+                                    <li class="navbar__menu-item">
+                                        <a href="#" class="navbar__menu-link">
+                                            <img src="./static/search/img/play_icon.png" alt="" class="navbar__menu-img">
+                                            <p class="navbar__menu-name">Play</p> 
+                                        </a>
+                                    </li>
+                                    <li class="navbar__menu-item">
+                                        <a href="#" class="navbar__menu-link">
+                                            <img src="./static/search/img/news.png" alt="" class="navbar__menu-img">
+                                            <p class="navbar__menu-name">News</p> 
+                                        </a>
+                                    </li>
+                                    <li class="navbar__menu-item">
+                                        <a href="#" class="navbar__menu-link">
+                                            <img src="./static/search/img/gmail_icon.png" alt="" class="navbar__menu-img">
+                                            <p class="navbar__menu-name">Gmail</p> 
+                                        </a>
+                                    </li>
+                                    <li class="navbar__menu-item">
+                                        <a href="#" class="navbar__menu-link">
+                                            <img src="./static/search/img/meet_icon.png" alt="" class="navbar__menu-img">
+                                            <p class="navbar__menu-name">Meet</p> 
+                                        </a>
+                                    </li>
+                                    <li class="navbar__menu-item">
+                                        <a href="#" class="navbar__menu-link">
+                                            <img src="./static/search/img/chat_icon.png" alt="" class="navbar__menu-img">
+                                            <p class="navbar__menu-name">Chat</p> 
+                                        </a>
+                                    </li>
+                                    <li class="navbar__menu-item">
+                                        <a href="#" class="navbar__menu-link">
+                                            <img src="./static/search/img/contacts_icon.png" alt="" class="navbar__menu-img">
+                                            <p class="navbar__menu-name">Contacts</p> 
+                                        </a>
+                                    </li>
+                                    <li class="navbar__menu-item">
+                                        <a href="#" class="navbar__menu-link">
+                                            <img src="./static/search/img/drive_icon.png" alt="" class="navbar__menu-img">
+                                            <p class="navbar__menu-name">Drive</p> 
+                                        </a>
+                                    </li>
+                                    <li class="navbar__menu-item">
+                                        <a href="#" class="navbar__menu-link">
+                                            <img src="./static/search/img/calendar_icon.png" alt="" class="navbar__menu-img">
+                                            <p class="navbar__menu-name">Calendar</p> 
+                                        </a>
+                                    </li>
+                                    <li class="navbar__menu-item">
+                                        <a href="#" class="navbar__menu-link">
+                                            <img src="./static/search/img/translate_icon.png" alt="" class="navbar__menu-img">
+                                            <p class="navbar__menu-name">Translate</p> 
+                                        </a>
+                                    </li>
+                                    <li class="navbar__menu-item">
+                                        <a href="#" class="navbar__menu-link">
+                                            <img src="./static/search/img/photos_icon.png" alt="" class="navbar__menu-img">
+                                            <p class="navbar__menu-name">Photos</p> 
+                                        </a>
+                                    </li>
+                                    <li class="navbar__menu-item">
+                                        <a href="#" class="navbar__menu-link">
+                                            <img src="./static/search/img/duo_icon.png" alt="" class="navbar__menu-img">
+                                            <p class="navbar__menu-name">Duo</p> 
+                                        </a>
+                                    </li>
+                                </ul>
+                                <ul class="navbar__menu-list">
+                                    <li class="navbar__menu-item">
+                                        <a href="#" class="navbar__menu-link">
+                                            <img src="./static/search/img/finance_icon.png" alt="" class="navbar__menu-img">
+                                            <p class="navbar__menu-name">Finance</p> 
+                                        </a>
+                                    </li>
+                                    <li class="navbar__menu-item">
+                                        <a href="#" class="navbar__menu-link">
+                                            <img src="./static/search/img/docs_icon.png" alt="" class="navbar__menu-img">
+                                            <p class="navbar__menu-name">Docs</p> 
+                                        </a>
+                                    </li>
+                                    <li class="navbar__menu-item">
+                                        <a href="#" class="navbar__menu-link">
+                                            <img src="./static/search/img/sheets_icon.png" alt="" class="navbar__menu-img">
+                                            <p class="navbar__menu-name">Sheets</p> 
+                                        </a>
+                                    </li>
+                                    <li class="navbar__menu-item">
+                                        <a href="#" class="navbar__menu-link">
+                                            <img src="./static/search/img/slides_icon.png" alt="" class="navbar__menu-img">
+                                            <p class="navbar__menu-name">Slides</p> 
+                                        </a>
+                                    </li>
+                                    <li class="navbar__menu-item">
+                                        <a href="#" class="navbar__menu-link">
+                                            <img src="./static/search/img/books_icon.png" alt="" class="navbar__menu-img">
+                                            <p class="navbar__menu-name">Books</p> 
+                                        </a>
+                                    </li>
+                                    <li class="navbar__menu-item">
+                                        <a href="#" class="navbar__menu-link">
+                                            <img src="./static/search/img/hangouts_icon.png" alt="" class="navbar__menu-img">
+                                            <p class="navbar__menu-name">Hangouts</p> 
+                                        </a>
+                                    </li>
+                                    <li class="navbar__menu-item">
+                                        <a href="#" class="navbar__menu-link">
+                                            <img src="./static/search/img/keeps_icon.png" alt="" class="navbar__menu-img">
+                                            <p class="navbar__menu-name">Keep</p> 
+                                        </a>
+                                    </li>
+                                    <li class="navbar__menu-item">
+                                        <a href="#" class="navbar__menu-link">
+                                            <img src="./static/search/img/jamboard_icon.png" alt="" class="navbar__menu-img">
+                                            <p class="navbar__menu-name">Jamboard</p> 
+                                        </a>
+                                    </li>
+                                    <li class="navbar__menu-item">
+                                        <a href="#" class="navbar__menu-link">
+                                            <img src="./static/search/img/classroom_icon.png" alt="" class="navbar__menu-img">
+                                            <p class="navbar__menu-name">Classroom</p> 
+                                        </a>
+                                    </li>
+                                    <li class="navbar__menu-item">
+                                        <a href="#" class="navbar__menu-link">
+                                            <img src="./static/search/img/earth_icon.png" alt="" class="navbar__menu-img">
+                                            <p class="navbar__menu-name">Earth</p> 
+                                        </a>
+                                    </li>
+                                    <li class="navbar__menu-item">
+                                        <a href="#" class="navbar__menu-link">
+                                            <img src="./static/search/img/collections_icon.png" alt="" class="navbar__menu-img">
+                                            <p class="navbar__menu-name">Collections</p> 
+                                        </a>
+                                    </li>
+                                    <li class="navbar__menu-item">
+                                        <a href="#" class="navbar__menu-link">
+                                            <img src="./static/search/img/arts_and_culture_icon.png" alt="" class="navbar__menu-img">
+                                            <p class="navbar__menu-name">Arts and Culture</p> 
+                                        </a>
+                                    </li>
+                                    <li class="navbar__menu-item">
+                                        <a href="#" class="navbar__menu-link">
+                                            <img src="./static/search/img/ads_icon.png" alt="" class="navbar__menu-img">
+                                            <p class="navbar__menu-name">Google Ads</p>  
+                                        </a>
+                                    </li>
+                                    <li class="navbar__menu-item">
+                                        <a href="#" class="navbar__menu-link">
+                                            <img src="./static/search/img/podcast_icon.png" alt="" class="navbar__menu-img">
+                                            <p class="navbar__menu-name">Podcasts</p> 
+                                        </a>
+                                    </li>
+                                    <li class="navbar__menu-item">
+                                        <a href="#" class="navbar__menu-link">
+                                            <img src="./static/search/img/one_icon.png" alt="" class="navbar__menu-img">
+                                            <p class="navbar__menu-name">Google One</p>  
+                                        </a>
+                                    </li>
+                                    <li class="navbar__menu-item">
+                                        <a href="#" class="navbar__menu-link">
+                                            <img src="./static/search/img/travel_icon.png" alt="" class="navbar__menu-img">
+                                            <p class="navbar__menu-name">Travel</p> 
+                                        </a>
+                                    </li>
+                                    <li class="navbar__menu-item">
+                                        <a href="#" class="navbar__menu-link">
+                                            <img src="./static/search/img/forms.png" alt="" class="navbar__menu-img">
+                                            <p class="navbar__menu-name">Forms</p> 
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="navbar__menu-more">
+                                    <p>More from Google</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="navbar__item">
+                            <a href="#" class="navbar__link navbar__sign-in-btn">Sign in</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+            <section class="adv-brand">
+                <h2 class="adv-brand__name">
+                    Advanced Search
+                </h2>
+            </section>
+            <section class="adv-search">
+                <form action="https://google.com/search" class="adv-search__form">
+                    <div class="adv-search__container">
+                        <div class="adv-search__row">
+                            <div class="adv-search__label adv-search__label-header">Find pages with...</div>
+                            <div class="adv-search__data">
+                                
+                            </div>
+                            <div class="adv-search__desc adv-search__desc-header">To do this in the search box.</div>
+                            
+                        </div>
+                        <div class="adv-search__row">
+                            <label for="all-words" class="adv-search__label">all these words:</label>
+                            <div class="adv-search__data">
+                                <input type="text" class="adv-search__data-input" name="as_q" id="all-words">
+                            </div>
+                            <div class="adv-search__desc">
+                            Type the important words: 
+                                <span class="adv-search__desc-ex">tri-colour rat terrier</span>
+                            </div>
+                        </div>
+                        <div class="adv-search__row">
+                            <label for="exact-word" class="adv-search__label">this exact word or phrase:</label>
+                            <div class="adv-search__data">
+                                <input type="text" class="adv-search__data-input" name="as_epq" id="exact-word">
+                            </div>
+                            <div class="adv-search__desc">
+                                Put exact words in quotes: 
+                                <span class="adv-search__desc-ex">"rat terrier"</span>
+                            </div>
+                        </div>
+                        <div class="adv-search__row">
+                            <label for="any-word" class="adv-search__label">any of these words:</label>
+                            <div class="adv-search__data">
+                                <input type="text" class="adv-search__data-input" name="as_oq" id="any-word">
+                            </div>
+                            <div class="adv-search__desc">
+                                Type <span class="adv-search__desc-ex">OR</span>
+                                between all the words you want: 
+                                <span class="adv-search__desc-ex">miniature OR standard</span>
+                            </div>
+                        </div>
+                        <div class="adv-search__row">
+                            <label for="none-words" class="adv-search__label">none of these words:</label>
+                            <div class="adv-search__data">
+                                <input type="text" class="adv-search__data-input" name="as_eq" id="none-words">
+                            </div>
+                            <div class="adv-search__desc">
+                                Put a minus sign just before words that you don't want: 
+                                <span class="adv-search__desc-ex">-rodent, -"Jack Russell"</span>
+                            </div>
+                        </div>
+                        <div class="adv-search__row">
+                            <label for="numbers" class="adv-search__label">numbers ranging from:</label>
+                            <div class="adv-search__data">
+                                <input type="text" class="adv-search__data-input" name="as_nlo" id="numbers">
+                                <span class="adv-search__data-split">to</span>
+                                <input type="text" class="adv-search__data-input" name="as_nhi">
+                            </div>
+                            <div class="adv-search__desc">
+                                Put two full stops between the numbers and add a unit of measurement: 
+                                <span class="adv-search__desc-ex">10..35 kg, £300..£500, 2010..2011</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="adv-search__container">
+                        <div class="adv-search__row">
+                            <div class="adv-search__label adv-search__label-header">Then narrow your results by...</div>
+                            <div class="adv-search__data">
+                                
+                            </div>
+                            <div class="adv-search__desc"></div>
+                        </div>
+                        <div class="adv-search__row">
+                            <label for="" class="adv-search__label">language:</label>
+                            <div class="adv-search__data">
+                                <select class="adv-search__data-select">
+                                    <option value="any language" class="adv-search__data-option">any language</option>
+                                    <option value="Afrikaans" class="adv-search__data-option">Afrikaans</option>
+                                    <option value="Arabic" class="adv-search__data-option">Arabic</option>
+                                    <option value="Armenian" class="adv-search__data-option">Armenian</option>
+                                    <option value="Belarusian" class="adv-search__data-option">Belarusian</option> 
+                                </select>
+                            </div>
+                            <div class="adv-search__desc">
+                                Find pages in the language that you select.
+                            </div>
+                        </div>
+                        <div class="adv-search__row">
+                            <label for="" class="adv-search__label">region:</label>
+                            <div class="adv-search__data">
+                                <select class="adv-search__data-select">
+                                    <option value="any region" class="adv-search__data-option">any region</option>
+                                    <option value="Afghanistan" class="adv-search__data-option">Afghanistan</option>
+                                    <option value="Albania" class="adv-search__data-option">Albania</option>
+                                    <option value="Algeria" class="adv-search__data-option">Algeria</option>
+                                    <option value="American Samoa" class="adv-search__data-option">American Samoa</option> 
+                                </select>
+                            </div>
+                            <div class="adv-search__desc">
+                                Find pages published in a particular region.
+                            </div>
+                        </div>
+                        <div class="adv-search__row">
+                            <label for="" class="adv-search__label">last update:</label>
+                            <div class="adv-search__data">
+                                <select class="adv-search__data-select">
+                                    <option value="any time" class="adv-search__data-option">any time</option>
+                                    <option value="past 24 hours" class="adv-search__data-option">past 24 hours</option>
+                                    <option value="past week" class="adv-search__data-option">past week</option>
+                                    <option value="past month" class="adv-search__data-option">past month</option>
+                                    <option value="past year" class="adv-search__data-option">past year</option> 
+                                </select>
+                            </div>
+                            <div class="adv-search__desc">
+                                Find pages updated within the time that you specify.
+                            </div>
+                        </div>
+                        <div class="adv-search__row">
+                            <label for="site-or-domain" class="adv-search__label">site or domain:</label>
+                            <div class="adv-search__data">
+                                <input type="text" class="adv-search__data-input" id="site-or-domain">
+                            </div>
+                            <div class="adv-search__desc">
+                                Search one site (like <span class="adv-search__desc-ex">wikipedia.org</span>) 
+                                or limit your results to a domain like <span class="adv-search__desc-ex">.edu, .org</span> 
+                                or <span class="adv-search__desc-ex">.gov</span>
+                            </div>
+                        </div>
+                        <div class="adv-search__row">
+                            <label for="" class="adv-search__label">terms appearing:</label>
+                            <div class="adv-search__data">
+                                <select class="adv-search__data-select">
+                                    <option value="anywhere in the page" class="adv-search__data-option">anywhere in the page</option>
+                                    <option value="in the title of the page" class="adv-search__data-option">in the title of the page</option>
+                                    <option value="in the text of the page" class="adv-search__data-option">in the text of the page</option>
+                                    <option value="in the URL of the page" class="adv-search__data-option">in the URL of the page</option>
+                                    <option value="in links to the page" class="adv-search__data-option">in links to the page</option> 
+                                </select>
+                            </div>
+                            <div class="adv-search__desc">
+                                Search for terms in the whole page, page title or web address, or links to the page you're looking for.
+                            </div>
+                        </div>
+                        <div class="adv-search__row">
+                            <label for="" class="adv-search__label">
+                                <a href="#" class="adv-search__link">SafeSearch</a>:
+                            </label>
+                            <div class="adv-search__data">
+                                <select class="adv-search__data-select">
+                                    <option value="Show explicit results" class="adv-search__data-option">Show explicit results</option>
+                                    <option value="Hide explicit results" class="adv-search__data-option">Hide explicit results</option>        
+                                </select>
+                            </div>
+                            <div class="adv-search__desc">
+                                Tell <a href="#" class="adv-search__desc-link">SafeSearch</a> 
+                                whether to filter sexually explicit content.
+                            </div>
+                        </div>
+                        <div class="adv-search__row">
+                            <label for="" class="adv-search__label">file type:</label>
+                            <div class="adv-search__data">
+                                <select class="adv-search__data-select">
+                                    <option value="any format" class="adv-search__data-option">any format</option>
+                                    <option value="Adobe Acrobat PDF (.pdf)" class="adv-search__data-option">Adobe Acrobat PDF (.pdf)</option>
+                                    <option value="Adobe Postscript (.ps)" class="adv-search__data-option">Adobe Postscript (.ps)</option>
+                                    <option value="Autodesk DWF (.dwf)" class="adv-search__data-option">Autodesk DWF (.dwf)</option>
+                                    <option value="Google Earth KML (.kml)" class="adv-search__data-option">Google Earth KML (.kml)</option> 
+                                </select>
+                            </div>
+                            <div class="adv-search__desc">Find pages in the format that you prefer.</div>
+                        </div>
+                        <div class="adv-search__row">
+                            <label for="" class="adv-search__label">
+                                <a href="#" class="adv-search__link">usage rights</a>:
+                            </label>
+                            <div class="adv-search__data">
+                                <select class="adv-search__data-select">
+                                    <option value="not filtered by licence" class="adv-search__data-option">not filtered by licence</option>
+                                    <option value="free to use or share" class="adv-search__data-option">free to use or share</option>
+                                    <option value="free to use or share, even commercially" class="adv-search__data-option">free to use or share, even commercially</option>
+                                    <option value="free to use, share or modify" class="adv-search__data-option">free to use, share or modify</option>
+                                    <option value="free to use, share or modify, even commercially" class="adv-search__data-option">free to use, share or modify, even commercially</option> 
+                                </select>
+                            </div>
+                            <div class="adv-search__desc">Find pages that you are free to use yourself.</div>
+                        </div>
+                        <div class="adv-search__row">
+                            <label for="" class="adv-search__label"></label>
+                            <div class="adv-search__data adv-search__btn-wrap">
+                                <button type="submit" class="adv-search__btn">Advanced Search</button>
+                            </div>
+                            <div class="adv-search__desc"></div>
+                        </div>
+                    </div>
+                </form>
+                <div class="adv-search__note">
+                    <h3 class="adv-search__note-header">
+                        You can also...
+                    </h3>
+                    <ul class="adv-search__note-list">
+                        <li class="adv-search__note-item">
+                            <a href="#" class="adv-search__note-link">Find pages that are similar to a URL</a>
+                        </li>
+                        <li class="adv-search__note-item">
+                            <a href="#" class="adv-search__note-link">Search pages that you've visited</a>
+                        </li>
+                        <li class="adv-search__note-item">
+                            <a href="#" class="adv-search__note-link">Use operators in the search box</a>
+                        </li>
+                        <li class="adv-search__note-item">
+                            <a href="#" class="adv-search__note-link">Customise your search settings</a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <footer class="footer">
+                <section class="footer-bar">
+                    <div class="footer-bar__location">
+                        Location
+                    </div>
+                </section>
+                <section class="footer-bar">
+                    <nav class="footer-bar__option">
+                        <ul class="footer-bar__option-list">
+                            <li class="footer-bar__option-item">
+                                <a href="#" class="footer-bar__option-link">Help</a>
+                            </li>
+                            <li class="footer-bar__option-item">
+                                <a href="#" class="footer-bar__option-link">Privacy</a>
+                            </li>
+                            <li class="footer-bar__option-item">
+                                <a href="#" class="footer-bar__option-link">Terms</a>
+                            </li>
+                        </ul>      
+                    </nav>
+                </section>
+            </footer>
+        </div>
+    </body>
+</html>

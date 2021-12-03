@@ -1,0 +1,212 @@
+.navbar {
+    justify-content: space-between;
+}
+
+.navbar__home-link {
+    display: flex;
+    align-items: center;
+}
+
+.navbar__home-img {
+    height: 24px;
+}
+
+.adv-brand {
+    padding: 30px 35px 26px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.adv-brand__name {
+    color: #d93025;
+    font-size: 2rem;
+    margin-left: 10px;
+    font-weight: 400;
+}
+
+.adv-search {
+    max-width: 1140px;
+    min-width: 200px;
+    width: 96%;
+    margin: 34px 2% 0 45px;
+}
+
+/* -------------------------------------------------------------------------------- */
+
+/* ADV SEARCH --------------------------------------------------------------------- */
+
+.adv-search__container {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid var(--border-color);
+    margin-bottom: 18px;
+    padding-bottom: 18px;
+}
+
+.adv-search__row {
+    display: flex;
+    align-items: center;
+    min-height: 42px;
+    
+}
+
+.adv-search__label {
+    flex-basis: 16%;
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+    color: var(--main-font-color);
+    margin-right: 5px;
+}
+
+.adv-search__label-header {
+    font-size: 1.6rem;
+}
+
+.adv-search__data {
+    flex-basis: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.adv-search__data-input {
+    width: 100%;
+    min-height: 30px;
+    padding: 1px 8px;
+    border: 1px solid #d9d9d9;
+    border-top: 1px solid #c0c0c0;
+    border-radius: 1px;
+    outline: none; 
+}
+
+.adv-search__data-input:focus {
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
+    border: 1px solid var(--primary-color);
+}
+
+.adv-search__data-select {
+    width: 100%;
+    min-height: 30px;
+    padding: 1px 4px;
+    outline: none;
+    color: var(--main-font-color);
+    background-color: #f1f1f1; 
+    border: 1px solid #d9d9d9;
+    border-radius: 2px;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.adv-search__data-select:hover {
+    color: #333;
+    border-color: #c6c6c6;
+    box-shadow: rgba(0, 0, 0, 0.1);
+}
+
+.adv-search__data-select:focus {
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    border: 1px solid #ccc;
+    background-color: #eee;
+}
+
+.adv-search__data-option {
+    background-color: white;
+    font-size: 1.3rem;
+}
+
+.adv-search__data-split {
+    font-size: 1.3rem;
+    margin: 0 20px;
+}
+
+.adv-search__desc {
+    flex-basis: 32%;
+    font-size: 1.1rem;
+    color: #555;
+    margin-left: calc(1% + 5px);
+    line-height: 1.3rem;
+}
+
+.adv-search__desc-header {
+    font-size: 1.3rem;
+    margin-left: 5px;
+    color: #777;
+    font-weight: 700;
+}
+
+.adv-search__desc-ex {
+    color: #666;
+    font-family: monospace;
+    font-size: 11px;
+    white-space: pre;
+}
+
+
+.adv-search__link:hover, .adv-search__desc-link:hover {
+    text-decoration: underline;
+}
+
+.break-line {
+    margin: 18px 0;
+    border-top: 1px solid var(--border-color);
+}
+
+.adv-search__btn-wrap {
+    justify-content: flex-end;
+}
+
+.adv-search__btn {
+    height: 30px;
+    color: white;
+    background-color: #4d90fe;
+    border: 1px solid #3079ed;
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 0 13px;
+    margin: 14px 0 10px;
+    border-radius: 2px;
+}
+
+.adv-search__btn:hover {
+    background-color: #357ae8;
+    background-image: -webkit-linear-gradient(top,#4d90fe,#357ae8);
+    background-image: -moz-linear-gradient(top,#4d90fe,#357ae8);
+    background-image: -ms-linear-gradient(top,#4d90fe,#357ae8);
+    background-image: -o-linear-gradient(top,#4d90fe,#357ae8);
+    background-image: linear-gradient(top,#4d90fe,#357ae8);
+    border: 1px solid #2f5bb7;
+}
+
+/* -------------------------------------------------------------------------------- */
+
+/* SEARCH NOTE -------------------------------------------------------------------- */
+.adv-search__note {
+    margin-bottom: 42px;
+}
+
+.adv-search__note-header {
+    padding: 6px 0;
+    font-size: 1.6rem;
+    color: #333;
+    font-weight: 400;
+}
+
+.adv-search__note-list {
+    list-style: none;
+    margin-top: 10px;
+}
+
+.adv-search__note-link {
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+    display: block;
+}
+
+.adv-search__note-link:hover {
+    text-decoration: underline;
+}
+/* -------------------------------------------------------------------------------- */
+
+/* FOOTER ------------------------------------------------------------------------- */
+.footer-bar {
+    padding-left: 45px;
+}
+/* -------------------------------------------------------------------------------- */
