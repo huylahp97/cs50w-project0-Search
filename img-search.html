@@ -270,103 +270,103 @@
                                 </button>
                             </div>
                         </article>
+                        <article class="img-adv">
+                            <div class="img-adv__container">
+                                <div class="img-adv__head">
+                                    <div class="img-adv__head-bar">
+                                        <h3 class="img-adv__head-title">Search by image</h3>
+                                        <label for="toggle-img-adv" class="img-adv__close-btn">
+                                            <i class="ti-close img-adv__close-icon"></i>
+                                        </label>
+                                    </div>
+                                    <p class="img-adv__head-note">
+                                        Search Google with an image instead of text. Try dragging an image here.
+                                    </p>
+                                </div>
+                                <input type="radio" id="toggle-url" name="img-adv-toggle" class="img-adv__radio" checked hidden>
+                                <input type="radio" id="toggle-img" name="img-adv-toggle" class="img-adv__radio" hidden> 
+                                <div class="img-adv__toggle">
+                                    <div class="img-adv__toggle-btn-wrap img-adv__toggle-url">
+                                        <label for="toggle-url" class="img-adv__toggle-btn">
+                                            Paste image URL
+                                        </label>
+                                        <div class="img-adv__help img-adv__help-url">
+                                            <i class="ti-help img-adv__help-icon"></i>
+                                            <div class="img-adv__help-info">
+                                                <div class="img-adv__help-info-wrap">
+                                                    <p class="img-adv__help-info-item">
+                                                        How to get an image URL
+                                                    </p>
+                                                    <ol class="img-adv__help-info-item img-adv__help-info-list">
+                                                        <li class="img-adv__help-info-li">
+                                                            Right click an image on the web and copy the image's URL.
+                                                        </li>
+                                                        <li class="img-adv__help-info-li">
+                                                            Return to the search box and paste on the URL (Ctrl+V or Command+V).
+                                                        </li>
+                                                    </ol>
+                                                    <p class="img-adv__help-info-item">
+                                                        <b>Tip:</b> Try dragging an image into the search box from your computer or the web
+                                                    </p>
+                                                    <a href="#" class="img-adv__help-info-item img-adv__help-info-a">
+                                                        Learn about search by image
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="img-adv__toggle-btn-wrap img-adv__toggle-img">
+                                        <label for="toggle-img" class="img-adv__toggle-btn">
+                                            Upload an image
+                                        </label>
+                                        <div class="img-adv__help img-adv__help-img">
+                                            <i class="ti-help img-adv__help-icon"></i>
+                                            <div class="img-adv__help-info">
+                                                <div class="img-adv__help-info-wrap">
+                                                    <p class="img-adv__help-info-item">
+                                                        How to upload an image
+                                                    </p>
+                                                    <ul class="img-adv__help-info-item img-adv__help-info-list">
+                                                        <li class="img-adv__help-info-li">
+                                                            Use the button below to open an image that’s on your computer.
+                                                        </li>
+                                                    </ul>
+                                                    <p class="img-adv__help-info-item">
+                                                        Google will automatically upload and search using the image.
+                                                    </p>
+                                                    <p class="img-adv__help-info-item">
+                                                        Please do not upload images with sensitive or identifying information.
+                                                    </p>
+                                                    <p class="img-adv__help-info-item">
+                                                        <b>Tip:</b> Try dragging an image into the search box from your computer or the web
+                                                    </p>
+                                                    <a href="#" class="img-adv__help-info-item img-adv__help-info-a">
+                                                        Learn about search by image
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="img-adv__search">
+                                    <div class="img-adv__search-url">
+                                        <form action="http://images.google.com/searchbyimage" class="img-adv__search-url-form">
+                                            <div class="img-adv__search-url-wrap">
+                                                <input type="text" name="image_url" class="img-adv__search-url-input">
+                                                <button type="submit" class="img-adv__search-url-btn">Search by image</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="img-adv__search-img">
+                                        <div class="img-adv__search-img-field">
+                                            <input type="file" name="img-file" id="img-file">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
                     </form>
-                </div>
-                <article class="img-adv">
-                    <div class="img-adv__container">
-                        <div class="img-adv__head">
-                            <div class="img-adv__head-bar">
-                                <h3 class="img-adv__head-title">Search by image</h3>
-                                <label for="toggle-img-adv" class="img-adv__close-btn">
-                                    <i class="ti-close img-adv__close-icon"></i>
-                                </label>
-                            </div>
-                            <p class="img-adv__head-note">
-                                Search Google with an image instead of text. Try dragging an image here.
-                            </p>
-                        </div>
-                        <input type="radio" id="toggle-url" name="img-adv-toggle" class="img-adv__radio" checked hidden>
-                        <input type="radio" id="toggle-img" name="img-adv-toggle" class="img-adv__radio" hidden> 
-                        <div class="img-adv__toggle">
-                            <div class="img-adv__toggle-btn-wrap img-adv__toggle-url">
-                                <label for="toggle-url" class="img-adv__toggle-btn">
-                                    Paste image URL
-                                </label>
-                                <div class="img-adv__help img-adv__help-url">
-                                    <i class="ti-help img-adv__help-icon"></i>
-                                    <div class="img-adv__help-info">
-                                        <div class="img-adv__help-info-wrap">
-                                            <p class="img-adv__help-info-item">
-                                                How to get an image URL
-                                            </p>
-                                            <ol class="img-adv__help-info-item img-adv__help-info-list">
-                                                <li class="img-adv__help-info-li">
-                                                    Right click an image on the web and copy the image's URL.
-                                                </li>
-                                                <li class="img-adv__help-info-li">
-                                                    Return to the search box and paste on the URL (Ctrl+V or Command+V).
-                                                </li>
-                                            </ol>
-                                            <p class="img-adv__help-info-item">
-                                                <b>Tip:</b> Try dragging an image into the search box from your computer or the web
-                                            </p>
-                                            <a href="#" class="img-adv__help-info-item img-adv__help-info-a">
-                                                Learn about search by image
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="img-adv__toggle-btn-wrap img-adv__toggle-img">
-                                <label for="toggle-img" class="img-adv__toggle-btn">
-                                    Upload an image
-                                </label>
-                                <div class="img-adv__help img-adv__help-img">
-                                    <i class="ti-help img-adv__help-icon"></i>
-                                    <div class="img-adv__help-info">
-                                        <div class="img-adv__help-info-wrap">
-                                            <p class="img-adv__help-info-item">
-                                                How to upload an image
-                                            </p>
-                                            <ul class="img-adv__help-info-item img-adv__help-info-list">
-                                                <li class="img-adv__help-info-li">
-                                                    Use the button below to open an image that’s on your computer.
-                                                </li>
-                                            </ul>
-                                            <p class="img-adv__help-info-item">
-                                                Google will automatically upload and search using the image.
-                                            </p>
-                                            <p class="img-adv__help-info-item">
-                                                Please do not upload images with sensitive or identifying information.
-                                            </p>
-                                            <p class="img-adv__help-info-item">
-                                                <b>Tip:</b> Try dragging an image into the search box from your computer or the web
-                                            </p>
-                                            <a href="#" class="img-adv__help-info-item img-adv__help-info-a">
-                                                Learn about search by image
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="img-adv__search">
-                            <div class="img-adv__search-url">
-                                <form action="http://images.google.com/searchbyimage" class="img-adv__search-url-form">
-                                    <div class="img-adv__search-url-wrap">
-                                        <input type="text" name="image_url" class="img-adv__search-url-input">
-                                        <button type="submit" class="img-adv__search-url-btn">Search by image</button>
-                                    </div>
-                                </form>
-                            </div>
-                            <div class="img-adv__search-img">
-                                <div class="img-adv__search-img-field">
-                                    <input type="file" name="img-file" id="img-file">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </article>
+                </div>  
             </section>
             <section class="language">  
             </section>
