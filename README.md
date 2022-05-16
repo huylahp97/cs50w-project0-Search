@@ -2,7 +2,7 @@
 This is the first project of CS50's Web Programming with Python and JavaScript - Search
 https://cs50.harvard.edu/web/2020/projects/0/search/
 
-Specific requirements of this project:
+Specific requirements for this project:
 
 "Your website must meet the following requirements:
 
